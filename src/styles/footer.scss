@@ -1,0 +1,22 @@
+/*Footer*/
+.footer {
+  @include flex-center();
+  @include box-shadow();
+  margin-top: auto;
+
+  &__social {
+    ul {
+      @include flex-row();
+
+      li {
+        @include list-style-none();
+        margin-bottom: 1rem;
+
+        a {
+          @include text-decor-none();
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

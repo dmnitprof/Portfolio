@@ -1,0 +1,143 @@
+/*Header*/
+.header {
+
+  margin: 0.5rem;
+  @include flex-row();
+  justify-content: space-around;
+  @include box-shadow();
+
+  &__profile {
+    @include flex-center();
+    margin: 0 0 3rem 0;
+  }
+
+  .profile {
+
+    &__img {
+      @include box-shadow();
+      max-width: 200px;
+      height: auto;
+      margin: 0 3rem 0 3rem;
+      padding: .5rem;
+    }
+
+    &__social {
+      margin-right: 1rem;
+      background: azure;
+      @include flex-center();
+
+      ul {
+        @include flex-col();
+        @include box-shadow();
+        row-gap: 1.5rem;
+        padding: 1rem;
+        border-radius: 8%;
+
+        li {
+          @include list-style-none();
+
+          a {
+            @include text-decor-none();
+
+            &:hover {
+              color: $text-red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*Header__Nav*/
+  &__nav {
+    /*menu__hidden*/
+    /*---------------------------------*/
+    .btn-menu {
+      color: #fff;
+      background-color: #666;
+      padding: 5px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      transition: right .23s;
+      z-index: 3;
+      width: 25px;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+    }
+
+    .btn-menu span {
+      display: block;
+      height: 5px;
+      background-color: #fff;
+      margin: 5px 0 0;
+      transition: all .1s linear .23s;
+      position: relative;
+    }
+
+    .btn-menu span.first {
+      margin-top: 0;
+    }
+
+    .menu__hidden-ticker {
+      display: none;
+    }
+
+    .menu__hidden-ticker:checked ~ .menu__hidden {
+      display: flex;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 0;
+      right: 1rem;
+      transition: left .2s;
+      z-index: 2;
+    }
+
+    .menu__hidden-ticker:checked ~ .btn-menu span.first {
+      -webkit-transform: rotate(45deg);
+      top: 10px;
+    }
+
+    .menu__hidden-ticker:checked ~ .btn-menu span.second {
+      opacity: 0;
+    }
+
+    .menu__hidden-ticker:checked ~ .btn-menu span.third {
+      -webkit-transform: rotate(-45deg);
+      top: -10px;
+    }
+
+    /*--------------------------------------*/
+
+    ul {
+      //margin: 1rem 1rem 0 0;
+      padding: 0.5rem;
+      background: azure;
+      @include flex-center();
+      flex-wrap: wrap;
+      @include box-shadow();
+
+      li {
+        @include list-style-none();
+        margin-right: 1rem;
+
+        a {
+          font-size: 1.2rem;
+          @include text-decor-none();
+
+          &:hover {
+            color: $text-red;
+          }
+        }
+      }
+    }
+  }
+
+  &__background {
+    margin: 1rem 0 0 0;
+    max-width: 100%;
+    height: auto;
+  }
+}

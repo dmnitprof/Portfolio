@@ -1,0 +1,84 @@
+/*Main*/
+.main {
+  margin: 1rem;
+  padding: 1rem 0 1rem 1rem;
+  @include flex-row();
+  @include box-shadow();
+
+  /*About*/
+  &__about {
+    h1 {
+      text-align: center;
+    }
+
+    .about {
+    }
+  }
+
+  /*Works*/
+  &__wrapper {
+    width: 100%;
+
+    .works__last {
+      text-align: center;
+      margin: 0 0.5rem 0 0;
+
+      img {
+      max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        box-shadow: 0  0 15px rgba(0,0,0,0.5);
+      }
+      a {
+        @include text-decor-none();
+        &:hover {
+          color: $text-red;
+        }
+      }
+    }
+    .works__all {
+      @include flex-col();
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /*Info*/
+  &__info {
+    .info {
+      height: auto;
+      flex: 0 1 auto;
+      padding: 0.5rem;
+      @include box-shadow();
+      margin: 0 1rem 0 1rem;
+      text-align: center;
+
+      &__location {
+        @include flex-center();
+      }
+      &__education {
+        border: dashed 1px darkolivegreen;
+        margin: 0 0 .5rem 0;
+      }
+      &__skills {
+        border: dashed 1px darkolivegreen;
+        ul {
+          @include flex-col();
+          li {
+            label {
+              margin: 0 1rem 0 0;
+            }
+            progress {
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Портфолио | Никульшин Дмитрий</title>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+</head>
+<body>
+
+<!--Page-->
+<div class="page">
+
+    <!--    Loading-->
+    <div class="loading">
+        <i class="fas fa-sync fa-spin fa-2x"></i>
+    </div>
+
+    <!--Header-->
+    <header class="header">
+
+        <div class="header__profile profile">
+            <a href="/"><img class="profile__img" src="./images/profile.jpg" alt="Никульшин Дмитрий"
+                             title="Дмитрий, web-разработчик"></a>
+            <div class="profile__social">
+                <ul>
+                    <li><a href="https://vk.com/public199239684" target="_blank"><i class="fab fa-vk fa-2x"
+                                                                                    title="Моя страница вконтакте"></i></a>
+                    </li>
+                    <li><a href="https://wa.me/+79258615959?text=сообщение%20с%20сайта%20DMN:" target="_blank"><i
+                            class="fab fa-whatsapp fa-2x" title="написать в whatsapp"></i></a></li>
+                    <li><a href="https://telegram.me/QualityRepairPC" target="_blank"><i
+                            class="fab fa-telegram-plane fa-2x" title="написать в telegram"></i></a></li>
+                    <li><a href="https://github.com/dmnitprof" target="_blank"><i class="fab fa-github fa-2x"
+                                                                                  title="мой github"></i></a></li>
+                    <li><a href="mailto:dmn.itprof@gmail.com"><i class="fas fa-at fa-2x"
+                                                                 title="моя почта gmail"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <input type="checkbox" id="checkbox" class="menu__hidden-ticker">
+            <label class="btn-menu" for="checkbox">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+
+            <div class="menu__hidden">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">Обо Мне</a></li>
+                <li><a href="/">Портфолио</a></li>
+                <li><a href="/">Контакты</a></li>
+                <li><a href="tel:+79258615959"><i class="fas fa-mobile-alt"></i>&nbsp;Позвонить</a></li>
+            </ul>
+            </div>
+            <img class="header__background" src="./images/header-navigation.jpg" alt="Веб разработка">
+        </nav>
+    </header>
+    <!--    Main-->
+    <main class="main">
+        <!--About-& Works-->
+        <div class="main__wrapper">
+            <!--About-->
+            <section class="main__about">
+                <h1>Сайт веб разработчика</h1>
+                <div class="about">
+                    <h3>Обо Мне</h3>
+                    <p>Здравствуйте, меня зовут <b>Дмитрий.</b></p>
+                    <p>Я знанимаюсь разработкой пользовательских интерфейсов веб сайтов и приложений.</p>
+                </div>
+            </section>
+            <!-- Work-->
+            <section class="main__works">
+                <div class="works">
+                    <div class="works__last">
+                        <h2>Последняя работа</h2>
+                        <h3>Простой список задач на React</h3>
+                        <a href="/"><img src="./images/todoReact.PNG" alt="список заметок на React"/></a>
+                        <a class="link-hover" href="/">(в модальном окне)</a>
+                    </div>
+                </div>
+                <div class="works__all">
+                    <h3>Все работы</h3>
+
+                    <a href="/">
+                        <img src="./images/allWorks.jpg" alt="все работы"/>
+                    </a>
+                    <a class="link-hover" href="/">переход на страницу портфолио (ссылка на все работы)</a>
+                </div>
+            </section>
+        </div>
+        <!--         Info-->
+        <section class="main__info">
+            <div class="info">
+                <div class="info__location">
+                    <a class="text-d-n" href="/"><i class="fas fa-map-pin"></i>&nbsp;Местонахождение:</a>
+                    <p>&nbsp;Москва</p>
+                </div>
+                <div class="info__education">
+                    <p><i class="fas fa-graduation-cap"></i>&nbsp;образование:</p>
+                    <p>МГИУ г. Москва</p>
+                    <p>Прикладная информаника</p>
+                </div>
+                <div class="info__skills">
+                    <p><i class="fas fa-briefcase"></i>&nbsp;Навыки:</p>
+                    <ul class="list-s-n">
+                        <li><label for="html&css">html & css:</label>
+                            <progress id="html&css" max="100" value="95"></progress>
+                            <small>&nbsp;95%</small>
+                        </li>
+                        <li><label for="js">Javascript:</label>
+                            <progress id="js" max="100" value="90"></progress>
+                            <small>&nbsp;90%</small>
+                            </li>
+                        <li><label for="frameworks">Vue, React:</label>
+                            <progress id="frameworks" max="100" value="65"></progress>
+                            <small>&nbsp;65%</small>
+                           </li>
+                        <li><label for="Backend">Backend:</label>
+                            <progress id="Backend" max="100" value="60"></progress>
+                            <small>&nbsp;60%</small>
+                          </li>
+                        <li><label for="other">other:</label>
+                            <progress id="other" max="100" value="50"></progress>
+                            <small>&nbsp;50%</small>
+                            </li>
+                    </ul>
+
+                </div>
+                <div class="info__links">
+                    <p>полезные ссылки</p>
+                </div>
+                <div class="info__materials">
+                    <p>различные материалы</p>
+                </div>
+
+            </div>
+        </section>
+        <div class="row" id="fruits"></div>
+    </main>
+    <!--    Footer-->
+    <footer class="footer">
+     <p>Developed by DMN >_</p>
+        <div class="footer__social">
+            <ul>
+                <li><a href="/"><i class="fab fa-vk"></i></a></li>
+                <li><a href="/"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="/"><i class="fab fa-telegram-plane"></i></a></li>
+                <li><a href="/"><i class="fab fa-github"></i></a></li>
+                <li><a href="/"><i class="fas fa-at"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="./scripts/base.js"></script>
+<script src="./plugins/modal.js"></script>
+<script src="./plugins/confirm.js"></script>
+<script src="./scripts/index.js"></script>
+<!--<script src="scripts/script.js"></script>-->
+</body>
+</html>

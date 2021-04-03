@@ -1,0 +1,111 @@
+/*Developed by DMN | Nikulshin Dmitriy*/
+
+/* Imports files style*/
+/*============================================*/
+@import "./icons/all.css";
+@import "mixins";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+
+/*=============================================*/
+/*Base Styles*/
+/*============================================*/
+
+/*----------------------------------------------*/
+/*Page styles*/
+/*_____________________________________________*/
+html,
+body {
+  color: $text-black;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Page*/
+.page {
+  @include flex-col();
+  width: 100%;
+  z-index: 100;
+  height: 100vh;
+
+  /*Loading*/
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+}
+.link-hover{
+  @include text-decor-none();
+  border: solid 2px green;
+  &:hover {
+    color: $text-red;
+  }
+}
+/*Help-Classes*/
+/*--------------------------------*/
+.text-d-n {
+  text-decoration: none;
+}
+.list-s-n {
+  list-style: none;
+}
+
+/*Imports styles components*/
+@import "header";
+@import "main";
+@import "footer";
+@import "modal";
+/*---------------------------------------------*/
+/*End Page Styles*/
+/*___________________________________________*/
+
+/*=============================================*/
+/*Media Queries*/
+/*============================================*/
+
+@media (min-width: 320px){
+  .menu__hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+.menu__hidden {
+  display: none;
+}
+  .btn-menu {
+    display: none;
+  }
+}
+@media (min-width: 769px){
+  .menu__hidden {
+    display: flex;
+  }
+  .btn-menu {
+    display: none;
+  }
+}
+@media (max-width: 575.98px){
+  .main,
+  .header,
+  .footer {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+
+@media (max-width: 767.98px){
+  .main,
+  .header,
+  .footer {
+    padding: 0 calc(50vw - 360px);
+  }
+}
+
+/*End Base Styles */
+/*===========================================*/
+
+/*Developed by DMN | Nikulshin Dmitriy*/
