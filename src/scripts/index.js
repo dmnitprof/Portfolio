@@ -1,4 +1,3 @@
-import '../styles/Base.css'
 
 // let fruits = [
 //   {id: 1, title: 'Яблоки', price: 20, img: 'https://e1.edimdoma.ru/data/ingredients/0000/2374/2374-ed4_wide.jpg?1487746348'},
